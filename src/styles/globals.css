@@ -29,6 +29,14 @@
 		--chart-3: 200 37% 24%; /* Slate blue */
 		--chart-4: 30 74% 66%; /* Peach */
 		--chart-5: 15 87% 67%; /* Coral */
+		--sidebar-background: var(--card); /* Matches card background */
+		--sidebar-foreground: var(--card-foreground); /* Matches card text color */
+		--sidebar-primary: var(--primary); /* Matches primary color */
+		--sidebar-primary-foreground: var(--primary-foreground); /* Matches primary text color */
+		--sidebar-accent: var(--accent); /* Matches accent color */
+		--sidebar-accent-foreground: var(--accent-foreground); /* Matches accent text color */
+		--sidebar-border: var(--border); /* Matches border color */
+		--sidebar-ring: var(--ring); /* Matches ring color */
 	}
 
 	.dark {
@@ -56,6 +64,14 @@
 		--chart-3: 30 40% 50%; /* Orange-brown */
 		--chart-4: 280 50% 60%; /* Cool violet */
 		--chart-5: 340 60% 50%; /* Magenta */
+		--sidebar-background: var(--card); /* Matches card background */
+		--sidebar-foreground: var(--card-foreground); /* Matches card text color */
+		--sidebar-primary: var(--primary); /* Matches primary color */
+		--sidebar-primary-foreground: var(--primary-foreground); /* Matches primary text color */
+		--sidebar-accent: var(--accent); /* Matches accent color */
+		--sidebar-accent-foreground: var(--accent-foreground); /* Matches accent text color */
+		--sidebar-border: var(--border); /* Matches border color */
+		--sidebar-ring: var(--ring); /* Matches ring color */
 	}
 }
 
