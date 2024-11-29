@@ -61,12 +61,12 @@ const DogsPage = () => {
 						<p className="text-card-foreground/50">
 							Common Health Problem: {dog.commonHealthProblems}
 						</p>
-						{/* <Link
-							href={`/dogs/${dog.id}`}
+						<Link
+							href={`/dogBreed/${dog.id}`}
 							className="text-primary hover:underline mt-2 block"
 						>
 							View More
-						</Link> */}
+						</Link>
 					</div>
 				))}
 			</div>

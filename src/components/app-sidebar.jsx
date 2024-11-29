@@ -1,7 +1,6 @@
 import * as React from "react";
-
-import { SearchForm } from "@/components/search-form";
-import { VersionSwitcher } from "@/components/version-switcher";
+import Link from "next/link";
+import { Icons } from "./icons";
 import {
 	Sidebar,
 	SidebarContent,
@@ -14,6 +13,9 @@ import {
 	SidebarMenuItem,
 	SidebarRail,
 } from "@/components/ui/sidebar";
+import { Button } from "./ui/button";
+import { Home } from "lucide-react";
+import { useRouter } from "next/router";
 
 // This is sample data.
 const data = {
@@ -26,6 +28,10 @@ const data = {
 				{
 					title: "Manage Dogs",
 					url: "/shelterDashboard/manage-dogs",
+				},
+				{
+					title: "Add Dogs",
+					url: "/shelterDashboard/add-dogs",
 				},
 				{
 					title: "Shelter Details",
@@ -41,15 +47,23 @@ const data = {
 };
 
 export function AppSidebar({ ...props }) {
+	const router = useRouter();
 	return (
 		<Sidebar {...props}>
-			<SidebarHeader>
-				{/* TODO (Amrith) : Replace the header */}
-				<VersionSwitcher
-					versions={data.versions}
-					defaultVersion={data.versions[0]}
-				/>
-				<SearchForm />
+			<SidebarHeader className="m-2 flex flex-row justify-between items-center">
+				<Link href="/" className="flex items-center justify-center">
+					<Icons.logo className="h-12 w-12" />
+					<span className="hidden font-bold lg:inline-block text-xl">
+						FurEver
+					</span>
+				</Link>
+				<Button
+					variant="outline"
+					className="w-fit p-0 px-3"
+					onClick={() => router.push("/")}
+				>
+					<Home />
+				</Button>
 			</SidebarHeader>
 			<SidebarContent>
 				{/* We create a SidebarGroup for each parent. */}
