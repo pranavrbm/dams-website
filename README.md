@@ -1,8 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# FurEver Shelter Portal
+
+FurEver Shelter Portal is a modern web application designed to streamline dog adoption and shelter management. Built with Next.js and React, it provides a robust dashboard for shelters to manage their dogs, review and process adoption applications, and connect with potential adopters. The portal also allows users to browse available dogs, submit adoption applications, and track the status of their applications.
+
+## Features
+
+- **Dog Adoption Platform:** Easily browse dogs, filter by breed or age, and view detailed dog profiles.
+- **Shelter Dashboard:** Shelter staff can manage dog listings, review and process adoption applications, and update dog statuses.
+- **Adoption Applications:** Users can submit applications to adopt dogs, view their application status, and communicate with shelters.
+- **User Profiles:** Adopters can view their adoption history and manage their account.
+- **Shelter Details:** Shelters can update their information and view associated staff and dogs.
+- **Secure API:** RESTful endpoints for user, dog, breed, adoption, and shelter management.
+
+## Technologies Used
+
+- **JavaScript (Next.js, React)**
+- **CSS (Tailwind, custom styles)**
+- **Prisma ORM** (for database operations)
+- **Node.js/Express API routes**
+- **Framer Motion** (animations)
+- **Lucide React** (icons)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js and npm/yarn/pnpm/bun installed
+
+### Installation
+
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/amrith-r-naik/dams-website.git
+    cd dams-website
+    ```
+
+2. **Install dependencies**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+3. **Configure environment variables**
+    - Copy `.env.example` to `.env.local` and fill in the required values (e.g., for database connection).
+    - Set up your database (see Prisma documentation).
+
+4. **Run database migrations** (if using Prisma)
+    ```bash
+    npx prisma migrate dev
+    ```
+
+### Running the Development Server
 
 ```bash
 npm run dev
@@ -14,27 +64,49 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to use the app.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Editing
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Main pages are in `src/pages/`
+- API routes are in `src/pages/api/`
+- Components are in `src/components/`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### API Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- All API endpoints are mapped under `/api/*` (e.g., `/api/dogs`, `/api/adoption`)
+- See the respective files in `src/pages/api/` for implementation details.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  components/         # Reusable React components (navigation, footer, UI elements)
+  pages/              # Main app pages (dogs, shelter dashboard, adoptions, etc.)
+    api/              # API endpoints (RESTful routes for dogs, adoptions, users, shelters)
+  styles/             # Global and component-level CSS
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Pull requests are welcome! Please open issues for feature requests or bug reports.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT (or specify your license)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Author
+
+[amrith-r-naik](https://github.com/amrith-r-naik)
+
+---
+
+### Professional Repository Name Suggestions
+
+- **FurEver-Shelter-Portal**
+- **ShelterAdopt**
+- **CanineConnect**
+- **ShelterManager**
+- **AdoptEase**
+
+Recommended: **FurEver-Shelter-Portal**
